@@ -1,0 +1,59 @@
+#bgvid {
+	display: block;
+}
+
+.content {
+	width: 30em;
+}
+
+h1 {
+	margin-top: 0;
+
+	& > span:nth-child(2) {
+		font-size: .8em;
+	}
+}
+
+h3, p {
+	font-weight: 300;
+}
+
+.signup {
+	flex-direction: row;
+
+	& > * {
+		flex-grow: 1;
+	}
+}
+
+input[type=email] {
+	margin-bottom: 0;
+}
+
+button {
+	margin-left: 1em;
+	padding: 0 1em;
+	white-space: nowrap;
+}
+
+.social-icons > li a {
+	cursor: pointer;
+	filter: gray; /* IE6-9 */
+	filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
+	-webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+
+	opacity: .5;
+
+	transition: all .3s ease-out;
+
+	&:hover {
+		background-color: rgba(255, 255, 255, .7);
+		border: 2px solid rgba(255, 255, 255, .8);
+		-webkit-filter: grayscale(0);
+		filter: none;
+
+		opacity: 1;
+
+		transition: all .3s ease-in;
+	}
+}
